@@ -74,6 +74,8 @@ Below are visualizations that illustrate the model's performance:
 - **Recall vs Threshold**
 - **F1 Score vs Threshold**
 
+!precision_recall_f1_score_vs_threshold.png
+
 ## Files
 
 | File Name                  | Description                                     |
