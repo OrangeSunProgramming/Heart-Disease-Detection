@@ -99,6 +99,11 @@ Below are visualizations that illustrate the model's performance:
 
 ![Threshold Graphs](images/precision_recall_f1_score_vs_threshold.png)
 
+### Feature Map Example
+To further illustrate the model's inner workings, here is an example of a feature map from one of the layers in the network:
+
+![Feature Map](images/feature_maps/feature_maps_conv2d_2_sample_1.png)
+
 ## Files
 
 | File Name                  | Description                                     |
