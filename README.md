@@ -62,10 +62,17 @@ Due to the deprecation of TensorFlow Addons (TFA), I created custom implementati
 | **Threshold**| 0.45   | Probability cutoff for classifying cases as positive, balancing precision and recall.        |
 
 ### Interpretation of Metrics
-- **High Recall**: Crucial for identifying positive cases of heart disease, with recall at 81.84%.
-- **Balanced Precision**: Acceptable level of 60.39%, minimizing false negatives in diagnostics.
-- **Optimal F1 Score**: A score of 0.6914 reflects a strong balance between precision and recall.
-- **AUC**: Indicates the model's ability to distinguish between heart disease and healthy cases effectively.
+- **High Recall (0.8184)**: In the context of heart disease detection, recall is of paramount importance. A high recall value of 81.84% means that the model is highly effective at identifying true positive cases of heart disease. This is crucial because missing a positive case (false negative) can have severe consequences, such as a patient with heart disease not receiving the necessary treatment. By achieving a high recall, the model ensures that most patients with heart disease are correctly identified, which is vital for timely and accurate diagnosis.
+
+- **Balanced Precision (0.6039)**: Precision measures the proportion of true positive predictions among all positive predictions. A precision of 60.39% indicates that while the model is good at identifying positive cases, there is still a significant proportion of false positives. In medical diagnostics, this is acceptable because it is better to have false positives (healthy individuals incorrectly identified as having heart disease) than false negatives. False positives can be further evaluated through additional tests, whereas false negatives could lead to missed diagnoses and untreated conditions.
+
+- **Optimal F1 Score (0.6914)**: The F1 score is the harmonic mean of precision and recall, providing a balance between the two metrics. An F1 score of 0.6914 reflects a strong balance between identifying positive cases and minimizing false positives. This balance is essential in medical applications where both high recall and reasonable precision are necessary to ensure that patients receive appropriate care without overwhelming the healthcare system with false alarms.
+
+- **AUC (0.8166)**: The Area Under the Curve (AUC) measures the model's ability to distinguish between classes. An AUC of 0.8166 indicates that the model has a strong ability to differentiate between heart disease and healthy cases. A higher AUC value means better performance, as it shows that the model can effectively separate positive cases from negative ones. This is crucial for a reliable diagnostic tool, as it ensures that the model can accurately identify patients with heart disease.
+
+- **Loss (0.4689)**: The loss metric measures the error in the model's predictions. A lower loss value indicates better performance. A loss of 0.4689 means that the model's predictions are relatively accurate, with fewer errors in classifying heart disease cases. This is important for ensuring that the model's predictions are reliable and can be trusted in a clinical setting.
+
+- **Best Threshold (0.45)**: The best threshold is the probability cutoff for classifying cases as positive. A threshold of 0.45 means that predictions with a probability above 0.45 are classified as positive cases. This threshold was chosen to balance recall and precision, achieving the best F1 score. By optimizing the threshold, the model can better balance the trade-off between identifying true positive cases and minimizing false positives, which is critical for effective heart disease diagnosis.
 
 ### Visualizations
 Below are visualizations that illustrate the model's performance:
