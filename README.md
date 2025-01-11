@@ -100,11 +100,11 @@ This project demonstrates the application of CNNs for heart disease detection wi
 - Matplotlib
 - Scikit-learn
 
-## Installation
-```bash
-pip install -r requirements.txt
-
 ## Acknowledgements
 This project uses the BMD-HS dataset. If this dataset helped your research, please cite the following paper:
 
 Ali, S. N., et al. (2024). BUET Multi-disease Heart Sound Dataset: A Comprehensive Auscultation Dataset for Developing Computer-Aided Diagnostic Systems. arXiv preprint arXiv:2409.00724.
+
+## Installation
+```bash
+pip install -r requirements.txt
